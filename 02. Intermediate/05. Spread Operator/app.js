@@ -61,3 +61,24 @@ console.log(obj3); // {x: 1, y: 2, z: 3}
 
 // const clone = { ...person, work: "Programming", location: "idk" };
 // console.log(clone);
+
+// 1. Make a clone of "arr, arr2" by using spread operator
+// 2. Make a clone of "user" object using spread operator
+
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = [6, 7, 8, 9, 10];
+const clone = [...arr1, ...arr2];
+console.log(clone);
+
+const user = {
+  name: "Yash",
+  age: 17,
+  city: "Delhi",
+  education: "BCA",
+  work: "Programming",
+  location: "idk",
+  hobbies: ["gaming", "coding", "reading"],
+};
+
+const cloneUser = { ...user, work: "WebDev", location: "idk" };
+console.log(cloneUser);
